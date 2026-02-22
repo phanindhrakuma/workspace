@@ -1,0 +1,14 @@
+{
+    "name": "coworkspace",
+    "version": "1.0.0",
+    "description": "Coworking Space Workspace Management System",
+    "scripts": {
+        "install:all": "cd server && npm install && cd ../client && npm install",
+        "dev:server": "cd server && npm run dev",
+        "dev:client": "cd client && npm run dev",
+        "build:client": "cd client && npm run build",
+        "start": "cd server && node src/index.js",
+        "build": "npm run build:client",
+        "deploy": "npm run build:client && cd server && node src/index.js"
+    }
+}
